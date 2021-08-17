@@ -17,7 +17,7 @@
             <div class="hero-text">
                 <h1>Join our Team</h1>
                 <p>Help us on our quest to make software even better</p>
-                <span href="#">Join Now!!</span>
+                <span onclick="openModal()">Join Now!!</span>
             </div>
         </section>
 
@@ -78,6 +78,41 @@
             
         </div>
     </footer>
+
+    <div class="modal-backdrop">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Join us</h2>
+                <p onclick="closeModal()">X</p>
+            </div>
+            <form>
+                <div class="form-control">
+                    <p>Slack username</p>
+                    <input type="text" placeholder="@benjee" name="username">
+                </div>
+                <div class="form-control">
+                    <p>Slack email</p>
+                    <input type="email" placeholder="benjee.bala@gmail.com" name="email">
+                </div>
+                <div class="form-control">
+                    <input type="submit" class="btn" value="Submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector(".modal-backdrop")
+
+        const openModal = () => {
+            modal.style.display = "flex"
+        }
+
+        const closeModal = () => {
+            modal.style.display = "none"
+        }
+        window.addEventListener("click", (e)=> e.target.className === "modal-backdrop" ? closeModal() : null)
+    </script>
     <script src="myname.js"></script>
 </body>
 </html>

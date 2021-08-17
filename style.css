@@ -194,4 +194,10 @@ footer {
   .sponsors {
     margin-top: 1.5rem;
   }
+  .modal {
+    width: 100%;
+  }
+  .modal-backdrop {
+    padding: 0 4rem;
+  }
 }

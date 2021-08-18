@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  place-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.footer section {
+  /* place-items: center; */
+  padding: 3rem 0;
+  font-size: 1.5rem;
+}
+.profile {
+  display: flex;
+  justify-content: flex-end;
+}
+.profile p {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.profile a {
+  padding: 0rem 1rem;
+}
+
+.sponsors a {
+  margin-right: 2rem;
+}
+.sponsors img {
+  width: 10rem;
+}
